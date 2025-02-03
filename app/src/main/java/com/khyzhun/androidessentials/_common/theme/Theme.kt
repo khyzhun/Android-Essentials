@@ -1,6 +1,5 @@
-package com.khyzhun.androidessentials.common.theme
+package com.khyzhun.androidessentials._common.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

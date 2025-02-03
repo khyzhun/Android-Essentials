@@ -5,11 +5,9 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
-import androidx.core.view.KeyEventDispatcher.Component
-import com.khyzhun.androidessentials.common.theme.EmptyView
+import com.khyzhun.androidessentials._common.theme.EmptyView
 
 class ExplicitIntentAActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

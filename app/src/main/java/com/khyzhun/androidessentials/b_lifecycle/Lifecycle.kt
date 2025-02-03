@@ -5,7 +5,7 @@ import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.khyzhun.androidessentials.common.theme.EmptyView
+import com.khyzhun.androidessentials._common.theme.EmptyView
 
 class LifecycleActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

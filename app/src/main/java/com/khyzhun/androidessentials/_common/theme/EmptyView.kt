@@ -1,4 +1,4 @@
-package com.khyzhun.androidessentials.common.theme
+package com.khyzhun.androidessentials._common.theme
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
