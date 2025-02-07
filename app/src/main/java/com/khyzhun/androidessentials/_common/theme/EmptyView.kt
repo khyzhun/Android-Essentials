@@ -20,6 +20,12 @@ fun EmptyView() {
     }
 }
 
+
+@Composable
+fun DefaultTheme(function: @Composable () -> Unit) {
+    function.invoke()
+}
+
 @Composable
 private fun Greeting(
     name: String = "Android",
