@@ -9,7 +9,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import com.khyzhun.androidessentials._common.theme.EmptyView
 
-class ExplicitIntentAActivity : ComponentActivity() {
+class LessonIntents : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

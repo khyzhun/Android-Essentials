@@ -7,7 +7,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
@@ -19,9 +18,9 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import com.khyzhun.androidessentials.R
 import com.khyzhun.androidessentials._common.theme.EmptyView
-import com.khyzhun.androidessentials.a_activity.MainActivity
+import com.khyzhun.androidessentials.a_activity.LessonActivity
 
-class ContextActivity : ComponentActivity() {
+class LessonContext : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent { EmptyView() }
@@ -64,7 +63,7 @@ fun OpenActivityExample() {
     val context = LocalContext.current
 
     Button(onClick = {
-        val intent = Intent(context, MainActivity::class.java)
+        val intent = Intent(context, LessonActivity::class.java)
         context.startActivity(intent)
     }) {
         Text("Open Second Activity")

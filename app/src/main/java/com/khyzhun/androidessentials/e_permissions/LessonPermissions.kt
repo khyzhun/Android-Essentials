@@ -24,7 +24,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.khyzhun.androidessentials._common.theme.DefaultTheme
 
-class PermissionsActivity : ComponentActivity() {
+class LessonPermissions : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

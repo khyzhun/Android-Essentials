@@ -7,7 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.khyzhun.androidessentials._common.theme.EmptyView
 
-class LifecycleActivity : ComponentActivity() {
+class LessonLifecycle : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d("Lifecycle", "onCreate")
