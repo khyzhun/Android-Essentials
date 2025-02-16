@@ -10,16 +10,29 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.khyzhun.androidessentials._common.theme.DefaultTheme
 
+/**
+ * Example 1
+ */
 class LessonBroadcasts : ComponentActivity() {
 
     private lateinit var powerReceiver: BroadcastReceiver
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        powerReceiver = PowerConnectedReceiver()
         setContent {
             DefaultTheme {
+                /**
+                 * Example 2
+                 */
                 //PowerReceiverScreen()
+                /**
+                 * Example 3
+                 */
                 //CustomBroadcastSendScreen()
+                /**
+                 * Example 4
+                 */
                 //CustomBroadcastReceiveScreen()
             }
         }
@@ -27,7 +40,6 @@ class LessonBroadcasts : ComponentActivity() {
 
     override fun onStart() {
         super.onStart()
-        powerReceiver = PowerConnectedReceiver()
         val filter = IntentFilter().apply {
             addAction(Intent.ACTION_POWER_CONNECTED)
             addAction(Intent.ACTION_POWER_DISCONNECTED)

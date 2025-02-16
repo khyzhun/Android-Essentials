@@ -5,7 +5,6 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
@@ -206,3 +205,10 @@ fun CustomBroadcastReceiveScreen() {
         Text("Received broadcast: $receivedMessage")
     }
 }
+
+
+
+
+
+
+
