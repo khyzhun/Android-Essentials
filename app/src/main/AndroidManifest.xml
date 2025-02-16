@@ -19,6 +19,15 @@
         android:theme="@style/Theme.AndroidEssentials"
         tools:targetApi="31">
 
+        <receiver
+            android:name=".f_broadcasts.CustomBroadcastReceiver"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.example.CUSTOM_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name="._navigation.NavigationActivity"
             android:exported="true">
@@ -37,6 +46,7 @@
         <activity android:name=".c_intents.IntentReceiverActivity" />
         <activity android:name=".d_context.LessonContext" />
         <activity android:name=".e_permissions.LessonPermissions" />
+        <activity android:name=".f_broadcasts.LessonBroadcasts" />
 
     </application>
 

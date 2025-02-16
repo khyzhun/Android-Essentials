@@ -10,7 +10,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.khyzhun.androidessentials._common.theme.DefaultTheme
 
-class BroadcastReceiverActivity : ComponentActivity() {
+class LessonBroadcasts : ComponentActivity() {
 
     private lateinit var powerReceiver: BroadcastReceiver
 
@@ -19,6 +19,8 @@ class BroadcastReceiverActivity : ComponentActivity() {
         setContent {
             DefaultTheme {
                 //PowerReceiverScreen()
+                //CustomBroadcastSendScreen()
+                //CustomBroadcastReceiveScreen()
             }
         }
     }
@@ -43,10 +45,10 @@ class BroadcastReceiverActivity : ComponentActivity() {
         override fun onReceive(context: Context, intent: Intent) {
             when (intent.action) {
                 Intent.ACTION_POWER_CONNECTED -> {
-                    Toast.makeText(context, "Зарядка підключена!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Charging...!", Toast.LENGTH_SHORT).show()
                 }
                 Intent.ACTION_POWER_DISCONNECTED -> {
-                    Toast.makeText(context, "Зарядка відключена!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Charging is disconnected!", Toast.LENGTH_SHORT).show()
                 }
             }
         }
