@@ -21,6 +21,7 @@ import com.khyzhun.androidessentials.c_intents.LessonIntents
 import com.khyzhun.androidessentials.d_context.LessonContext
 import com.khyzhun.androidessentials.e_permissions.LessonPermissions
 import com.khyzhun.androidessentials.f_broadcasts.LessonBroadcasts
+import com.khyzhun.androidessentials.g_alert_dialogs.LessonAlertDialogs
 
 class NavigationActivity : ComponentActivity() {
 
@@ -42,6 +43,7 @@ class NavigationActivity : ComponentActivity() {
             item { LessonButton("Context", LessonContext::class.java) }
             item { LessonButton("Permissions", LessonPermissions::class.java) }
             item { LessonButton("Broadcasts", LessonBroadcasts::class.java) }
+            item { LessonButton("Alert Dialogs", LessonAlertDialogs::class.java) }
         }
     }
 

@@ -47,6 +47,7 @@
         <activity android:name=".d_context.LessonContext" />
         <activity android:name=".e_permissions.LessonPermissions" />
         <activity android:name=".f_broadcasts.LessonBroadcasts" />
+        <activity android:name=".g_alert_dialogs.LessonAlertDialogs" />
 
     </application>
 
